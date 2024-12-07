@@ -1,3 +1,6 @@
+import Link from "next/link"
+import signup from "../sign-up/page"
+
 export default function Navbar() {
     return (
         <>
@@ -11,7 +14,7 @@ export default function Navbar() {
                             <li className="font-poppins font-normal text-[16px] leading-[24px] text-center text-black border-[#505050] border-b">Home</li>
                             <li className="font-poppins font-normal text-[16px] leading-[24px] text-center text-black">Contact</li>
                             <li className="font-poppins font-normal text-[16px] leading-[24px] text-center text-black">About</li>
-                            <li className="font-poppins font-normal text-[16px] leading-[24px] text-center text-black w-100% shrink-0">Sign Up</li>
+                            <li className="font-poppins font-normal text-[16px] leading-[24px] text-center text-black w-100% shrink-0"><Link href="/sign-up">Sign Up</Link></li>
                         </ul>
                     </div>
                     <div className="flex gap-x-6">
